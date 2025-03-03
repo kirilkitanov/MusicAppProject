@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.register-container {
+.login-container {
     background-color: transparent;
     border: 2px solid white; /* Бял контур */
     padding: 30px;
@@ -19,19 +19,19 @@ body {
     width: 300px;
 }
 
-.register-form input,
-.register-btn {
+.login-form input,
+.login-btn {
     display: block;
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    box-sizing: border-box; /* Гарантира, че padding не влияе на ширината */
-    text-align: center; /* Центрира текста */
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.register-btn {
+.login-btn {
     background-color: #F9A825;
     color: white;
     border: none;
@@ -42,7 +42,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.register-btn:hover {
+.login-btn:hover {
     background-color: #F57F17;
 }
 

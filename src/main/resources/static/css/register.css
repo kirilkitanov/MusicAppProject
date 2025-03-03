@@ -62,3 +62,8 @@ body {
 .form-already a:hover {
     color: #F57F17;
 }
+
+.text-warning {
+    color: #e71717;
+}
+

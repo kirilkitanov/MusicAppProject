@@ -8,7 +8,6 @@ import java.util.UUID;
 
 @Builder
 @Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
