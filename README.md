@@ -1,2 +1,1 @@
-# MusicAppProject
- Final Project
+Final Project Spring Advanced course, SoftUni.
