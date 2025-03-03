@@ -1,0 +1,172 @@
+/* Общи стилове за страницата */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.home-page {
+    background-color: #080838;
+    display: flex;
+    height: 100vh;
+}
+
+/* Лява част: Информация за потребителя и бутоните */
+.left-side {
+    width: 200px; /* Размер на лявата част */
+    background-color: #080838; /* Същият син фон */
+    color: white;
+    padding: 20px;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.user-info h2,
+.user-info h3 {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-btn {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    color: #F9A825; /* Златисто-жълт цвят при hover */
+}
+
+/* Дясната част: Контейнер за албуми */
+.album-container {
+    margin-left: 50px; /* За да има място за лявата част */
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.album-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.album-card {
+    background-color: white;
+    width: 22%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.album-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.album-card p {
+    color: #777;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+}
+
+.album-btn {
+    margin-top: 10px;
+    background-color: #F9A825;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.album-btn:hover {
+    background-color: #F57F17;
+}
+
+.album-btn:focus {
+    outline: none;
+}
+
+.separator {
+    width: 2px;
+    background: white;
+    height: 100%;
+    left: 50%;
+}
+/* Лявата част на навигацията */
+.left-side {
+    width: 200px; /* Размер на лявата част */
+    background-color: #080838;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box; /
+}
+
+/* Навигационни бутони */
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Общи стилове за бутоните */
+.nav-btn {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    color: #F9A825;
+}
+
+
+.logout-btn {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-align: center;
+    margin-top: auto;
+}
+
+.logout-btn:hover {
+    color: #F9A825;
+}
+
+
