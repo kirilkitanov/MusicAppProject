@@ -8,6 +8,11 @@
 </head>
 <body>
 <div class="login-container">
+
+    <div th:if="${successMessage}" class="success">
+        <p th:text="${successMessage}"></p>
+    </div>
+
     <h2>Log in to your account</h2>
 
     <form class="login-form" th:action="@{/login}" th:method="POST" th:object="${loginRequest}">
