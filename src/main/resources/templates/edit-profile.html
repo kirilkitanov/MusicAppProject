@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Music App</title>
+    <link rel="stylesheet" href="/css/edit-profile.css">
+</head>
+<body class="home-page">
+
+<!--Лява част за навигация-->
+<div class="left-side">
+    <div class="user-info">
+        <h2>Welcome,</h2>
+        <h3 th:if="${user.firstName != null or user.lastName != null}"
+            th:text="${(user.firstName != null ? user.firstName : '') + (user.lastName != null ? ' ' + user.lastName : '')}">
+        </h3>
+        <h3 th:text="${#strings.capitalize(#strings.toLowerCase(user.role.name()))}">Fan</h3>
+    </div>
+
+    <div class="nav-bar">
+        <a href="/add-album" class="nav-btn">Add Album</a>
+        <a href="/add-review" class="nav-btn">Add Review</a>
+        <a href="/edit-profile" class="nav-btn">Edit Profile</a>
+        <a href="/users" class="nav-btn">Users</a>
+    </div>
+    <a href="/logout" class="nav-btn logout-btn">Logout</a>
+</div>
+<div class="separator"></div>
+
+<!-- Форма за редактиране на профила -->
+<div class="edit-profile-container">
+
+    <form class="edit-profile-form" action="" method="">
+
+        <h2>Edit Profile</h2>
+
+        <input type="text" placeholder="First Name"  required>
+        <p class="text-warning"></p>
+
+        <input type="text" placeholder="Last Name" required>
+        <p ></p>
+
+        <input type="email" placeholder="Email" required>
+        <p ></p>
+
+        <button type="submit" class="edit-profile-btn">Save Changes</button>
+    </form>
+</div>
+</body>
+</html>

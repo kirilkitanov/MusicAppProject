@@ -23,7 +23,7 @@
   <div class="nav-bar">
     <a href="/add-album" class="nav-btn">Add Album</a>
     <a href="/add-review" class="nav-btn">Add Review</a>
-    <a href="/edit-profile" class="nav-btn">Edit Profile</a>
+    <a th:href="@{'/users/' + ${user.id} + '/profile'}" class="nav-btn">Edit Profile</a>
     <a href="/users" class="nav-btn">Users</a>
   </div>
     <a href="/logout" class="nav-btn logout-btn">Logout</a>
